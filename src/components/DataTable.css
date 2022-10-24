@@ -1,0 +1,22 @@
+.v-datatable thead th, .v-table th, .v-datatable tbody td, .v-table-summary td, .v-datatable tfoot td, .v-datatable tfoot th {
+    padding: 2px 4px;
+    border: 1px solid #ccd0d4;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.v-datatable{
+	width: 100%;
+    overflow: auto;
+}
+.v-datatable thead{
+    background: black;
+    color: white;
+}
+.v-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.v-table tr.v-selected {
+    background-color: #4d7192;
+	color:white;
+}
