@@ -83,7 +83,7 @@ const Login: React.FC = (props) => {
           <IonRow>
             <IonCol>
             <IonItem>
-            <IonLabel position="floating"> Email</IonLabel>
+            <IonLabel position="floating"> Nombre</IonLabel>
             <IonInput
                 type="email"
                 value={email}
@@ -97,7 +97,7 @@ const Login: React.FC = (props) => {
           <IonRow>
             <IonCol>
             <IonItem>
-              <IonLabel position="floating"> Password</IonLabel>
+              <IonLabel position="floating"> Contraseña</IonLabel>
               <IonInput
                 type="password"
                 value={password}
@@ -109,20 +109,11 @@ const Login: React.FC = (props) => {
           </IonRow>
           <IonRow>
             <IonCol>
-              <p style={{ fontSize: "small" }}>
-                  By clicking LOGIN you agree to our <a href="/a">Policy</a>
-              </p>
-              <IonButton expand="block" onClick={handleLogin}>Login</IonButton>
-              <p style={{ fontSize: "medium" }}>
-                  Don't have an account? <a href="/sigup">Sign up!</a>
-              </p>
-
+              <IonButton expand="block" onClick={handleLogin}>Iniciar Sesión</IonButton>
+             
             </IonCol>
           </IonRow>
         </IonGrid>
-        <LoginButton/>
-      <br />
-      <Logout />
       </IonContent>
     </IonPage>
   );
