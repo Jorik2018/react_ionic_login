@@ -38,7 +38,7 @@ const Login: React.FC = (props) => {
     }*/
 	//http.post('/api/login',{"username": email,"password": password},{})
 	
-	http.post('http://web.regionancash.gob.pe/api/auth',{"username": email,"password": password},{})
+	http.post('https://web.regionancash.gob.pe/api/auth',{"username": email,"password": password},{})
 	//http.post('https://grupoipeys.com/wp-json/jwt-auth/v1/token',{"username": email,"password": password},{})
 		.then((data:any) =>{
 			accountService.setUserValue(data);
